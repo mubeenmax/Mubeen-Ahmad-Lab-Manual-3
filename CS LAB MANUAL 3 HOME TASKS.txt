@@ -1,0 +1,176 @@
+                                 CS LAB MANUAL3 HOME TASKS
+                                       QUESTION #1
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    int choice;
+    long long population;
+
+    cout<<"Select a Province:\n";
+    cout<<"1. Punjab\n";
+    cout<<"2. Sindh\n";
+    cout<<"3. KPK\n";
+    cout<<"4. Balochistan\n";
+    cout<<"Enter your Choice (1-4): ";
+    cin>>choice;
+
+    switch (choice) {
+        case 1:
+            population=110012442;// Punjab
+            break;
+        case 2:
+            population=47933077;// Sindh
+            break;
+        case 3:
+            population=35574377;// KPk
+            break;
+        case 4:
+            population=12993634;// Balochistan
+            break;
+    }
+    cout<<"The total population of Your selected Province is: "<<population<<endl;
+
+    return 0;
+}
+
+
+                                     QUESTION #2
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    char Alphabet;
+
+    cout<<"Enter an Alphabet: ";
+    cin>>Alphabet;
+
+    switch(Alphabet){
+        case 'a':
+        case 'A':
+        case 'e':
+        case 'E':
+        case 'i':
+        case 'I':
+        case 'o':
+        case 'O':
+        case 'u':
+        case 'U':
+            cout<<Alphabet<< " is a vowel."<<endl;
+            break;
+        default:
+            if (isalpha(Alphabet)) {
+                cout<<Alphabet<<" is a consonant."<<endl;
+            } 
+            break;
+    }
+
+    return 0;
+}
+
+
+                              QUESTION #3
+
+#include<iostream>
+using namespace std;
+
+int main() {
+    int number;
+
+    cout << "Enter a number: ";
+    cin >> number;
+
+    switch ((number > 0) - (number < 0)) {
+        case 1:
+            cout << "Positive" << endl;
+            break;
+        case -1:
+            cout << "Negative" << endl;
+            break;
+        case 0:
+            cout << "Zero" << endl;
+            break;
+        default:
+            cout << "Invalid input" << endl;
+            break;
+    }
+
+    return 0;
+}
+
+
+
+                                 QUESTION #4
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int age;
+
+    cout << "Enter your age: ";
+    cin >> age;
+
+    if (age >= 18) {
+        cout << "You are an adult." << endl;
+    } else {
+        if (age >= 13) {
+            cout << "You are a teenager." << endl;
+        } else {
+            cout << "You are a child." << endl;
+        }
+    }
+
+    return 0;
+}
+
+
+                                  QUESTION #5
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int age;
+
+    cout << "Enter your age: ";
+    cin >> age;
+
+    if (age >= 18) {
+        cout << "You are an adult." << endl;
+    } else if (age >= 13) {
+        cout << "You are a teenager." << endl;
+    } else {
+        cout << "You are a child." << endl;
+    }
+
+    return 0;
+}
+
+
+                                  QUESTION #6
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    char alphabet;
+
+    cout << "Enter a single alphabet: ";
+    cin >> alphabet;
+
+    if (isalpha(alphabet)) {
+        if (alphabet == 'a' || alphabet == 'e' || alphabet == 'i' || alphabet == 'o' || alphabet == 'u' ||
+            alphabet == 'A' || alphabet == 'E' || alphabet == 'I' || alphabet == 'O' || alphabet == 'U') {
+            cout << alphabet << " is a vowel." << endl;
+        } else {
+            cout << alphabet << " is a consonant." << endl;
+        }
+    } else {
+        cout << "Invalid input. Please enter a single alphabet." << endl;
+    }
+
+    return 0;
+}
